@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Overpass:wght@600;700;800&amp;family=Sora:wght@500;700;800&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Sora:wght@500;700;800&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -27,46 +27,29 @@
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#works">Works</a>
+        <a href="./projects.html">All Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="home" class="page-wrap">
-      <section class="hero reveal" id="about" style="--delay: 0.05s">
-        <p class="eyebrow">Backend Software Developer</p>
-        <h1>Building reliable e-commerce services that scale with real business growth.</h1>
-        <p class="lead">
-          I am Yeheskiel Reza Andrazein, a backend engineer based in Bali, Indonesia. I work across Go, Python, C#, JavaScript,
-          and SQL to ship production systems that are fast, secure, and easier to operate.
+      <section class="hero reveal" style="--delay: 0.05s">
+        <p class="eyebrow">Senior Backend Engineer</p>
+        <h1>Senior Backend Engineer for e-commerce, payments, and public platforms.</h1>
+        <p class="lead" id="about">
+          Backend software engineer experienced in e-commerce platforms and backend services. Proficient in Go, Python,
+          JavaScript, C#, TypeScript, and SQL, with a background in microservices, payment and messaging integrations,
+          system architecture, and technical leadership.
         </p>
         <div class="cta-row">
           <a class="btn btn-primary" href="mailto:eki_yeheskiel@hotmail.co.id">Email Me</a>
-          <a class="btn btn-secondary" href="./CV - Yeheskiel Reza Andrazein.pdf">Download CV</a>
+          <a class="btn btn-secondary" href="./CV%20-%20Yeheskiel%20Reza%20Andrazein.pdf">Download CV</a>
         </div>
         <ul class="meta-list">
           <li><span>LinkedIn</span><a href="https://linkedin.com/in/yeheskiel-andrazein-a4549321a" target="_blank" rel="noreferrer">linkedin.com/in/yeheskiel-andrazein-a4549321a</a></li>
           <li><span>GitHub</span><a href="https://github.com/ekiapek" target="_blank" rel="noreferrer">github.com/ekiapek</a></li>
           <li><span>Location</span><p>Bali, Indonesia</p></li>
         </ul>
-      </section>
-
-      <section class="impact reveal" style="--delay: 0.1s" aria-label="Impact highlights">
-        <article class="impact-card">
-          <h2>90%</h2>
-          <p>Lowered application errors in payment services by improving reliability and resource usage.</p>
-        </article>
-        <article class="impact-card">
-          <h2>80%</h2>
-          <p>Built microservices that ran faster while cutting memory usage for e-commerce workloads.</p>
-        </article>
-        <article class="impact-card">
-          <h2>3M+</h2>
-          <p>Helped maintain services supporting authentication and operations for millions of users.</p>
-        </article>
-        <article class="impact-card">
-          <h2>30%</h2>
-          <p>Contributed to revenue growth through catalog and conversion API integrations.</p>
-        </article>
       </section>
 
       <section id="experience" class="section reveal" style="--delay: 0.15s">
@@ -83,10 +66,12 @@
             </div>
             <p class="time">Aug 2024 - Present | Jakarta, Indonesia</p>
             <ul>
-              <li>Designed and implemented RESTful microservices with Go and Echo, improving speed and efficiency.</li>
-              <li>Architected JWT authentication with API Gateway integration, strengthening security posture.</li>
-              <li>Improved payment service performance and reduced operational errors significantly.</li>
-              <li>Led backend development and standardized internal documentation for the team.</li>
+              <li>Led backend architecture and technical delivery for a microservice-based POS platform for Indonesian UMKM; defined service boundaries, RBAC, PostgreSQL/Redis/RabbitMQ foundations, and API contracts.</li>
+              <li>Led re-platforming of a WhatsApp-first commerce system from a monolith toward ~30 Go/Fiber v2 services with reusable boilerplate and RabbitMQ-backed chatbot flows.</li>
+              <li>Delivered bill-payment and digital-product capabilities (PLN, PDAM, BPJS, mobile data, game vouchers) with virtual-account, BI-SNAP, and QRIS flows.</li>
+              <li>Refactored the monolithic e-commerce service from Gin to Fiber, eliminating weekly OOM kills during peak weekend traffic with 80% performance improvement and ~75% lower memory use.</li>
+              <li>Revamped the payment service for recurring OOMs and latency, reducing errors by 90% and resource use by 50%.</li>
+              <li>Authored approximately 100 design and engineering documents with structured requirements-to-implementation and QA guidance.</li>
             </ul>
           </article>
 
@@ -97,10 +82,9 @@
             </div>
             <p class="time">Dec 2022 - Aug 2024 | Jakarta, Indonesia</p>
             <ul>
-              <li>Developed core e-commerce backend services in Go with Gin framework.</li>
-              <li>Integrated WhatsApp Catalog and Meta Conversion API to improve product and sales flows.</li>
-              <li>Optimized shipping and payment flows, reducing unnecessary API calls.</li>
-              <li>Added email notification channel to reduce unattended orders.</li>
+              <li>Planned an end-to-end hospitality platform across 11 Go/Echo v4 services with JWT and API-key authentication patterns.</li>
+              <li>Extended Go/Gin commerce services with WhatsApp Catalog and Meta Conversion API integrations, contributing to 30% revenue growth.</li>
+              <li>Optimized shipping and payment workflows, reducing unnecessary API calls by 50%; added customer-support email notifications that reduced unattended orders by 30%.</li>
             </ul>
           </article>
 
@@ -111,9 +95,9 @@
             </div>
             <p class="time">Aug 2021 - Nov 2022 | Jakarta, Indonesia</p>
             <ul>
-              <li>Led development of a Sales Performance Monitoring dashboard for faster support decisions.</li>
-              <li>Built .NET WebAPI service for WhatsApp message parsing and user authentication.</li>
-              <li>Maintained backend integrations with shipping partners and offline stores across Indonesia.</li>
+              <li>Built .NET Web API services for WhatsApp message processing and e-commerce authentication, supporting more than 3 million customers.</li>
+              <li>Led a Sales Performance Monitoring dashboard (ASP.NET, jQuery); support response and decision time fell by 50% within three months.</li>
+              <li>Increased REST API performance by 80% across e-commerce services integrating third-party shipping providers and offline stores.</li>
             </ul>
           </article>
 
@@ -124,8 +108,7 @@
             </div>
             <p class="time">Aug 2020 - Jul 2021 | Jakarta, Indonesia</p>
             <ul>
-              <li>Delivered bug fixes and backend performance improvements on .NET Framework services.</li>
-              <li>Helped eliminate large portions of application errors in e-commerce operations.</li>
+              <li>Fixed defects in the .NET Framework e-commerce backend, cutting application errors by more than 70%.</li>
             </ul>
           </article>
         </div>
@@ -138,19 +121,11 @@
         </div>
 
         <div class="chips-grid" role="list" aria-label="Skills list">
-          <p role="listitem">Go</p>
-          <p role="listitem">Python</p>
-          <p role="listitem">C#</p>
-          <p role="listitem">.NET Framework 4.6</p>
-          <p role="listitem">SQL</p>
-          <p role="listitem">REST API</p>
-          <p role="listitem">JavaScript</p>
-          <p role="listitem">TypeScript</p>
-          <p role="listitem">Node.js</p>
-          <p role="listitem">Docker</p>
-          <p role="listitem">AWS</p>
-          <p role="listitem">Team Collaboration</p>
-          <p role="listitem">Problem Analysis</p>
+          <p role="listitem"><strong>Programming:</strong> Go, Python, C#, PHP, JavaScript, TypeScript, SQL</p>
+          <p role="listitem"><strong>Backend and architecture:</strong> Gin, Echo v4, Fiber v2/v3, FastAPI, Laravel, ASP.NET Web API, microservices, Clean Architecture, REST APIs, API contracts</p>
+          <p role="listitem"><strong>Data and infrastructure:</strong> PostgreSQL, PostGIS, Redis, RabbitMQ, Docker, Kubernetes, AWS, GitLab CI</p>
+          <p role="listitem"><strong>Security and integrations:</strong> JWT, OAuth2, RBAC, WhatsApp Business API, Meta Catalog and Conversions API, BI-SNAP, payment gateway integrations, delivery service integrations</p>
+          <p role="listitem"><strong>Leadership and delivery:</strong> system architecture, technical leadership, code review, engineering documentation, AI-assisted development workflows</p>
         </div>
       </section>
 
@@ -167,8 +142,8 @@
           </div>
           <p class="time">Aug 2017 - Aug 2021 | Yogyakarta, Indonesia</p>
           <ul>
+            <li>Bachelor of Informatics, August 2017 - August 2021.</li>
             <li>Graduated with GPA 3.84 / 4.00.</li>
-            <li>Built a web-based online student chairman election platform during the 2020 pandemic.</li>
           </ul>
         </article>
       </section>
@@ -179,6 +154,39 @@
           <h2>Projects and Product Contributions</h2>
         </div>
 
+        <div class="project-grid" id="featured-projects">
+          <article class="project-card">
+            <h3>BerandaToko</h3>
+            <p class="tagline">WhatsApp-first commerce and reseller/PPOB platform.</p>
+            <p class="meta">Go · Fiber v2 · RabbitMQ</p>
+            <div class="project-links">
+              <button type="button" class="btn btn-primary" data-project-id="berandatoko" aria-label="View details for BerandaToko">View details</button>
+              <a href="https://berandatoko.com/" target="_blank" rel="noreferrer">Visit site</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>BerandaPOS</h3>
+            <p class="tagline">POS platform for Indonesian UMKM.</p>
+            <p class="meta">Go · Fiber v3 · PostgreSQL · Redis · RabbitMQ</p>
+            <div class="project-links">
+              <button type="button" class="btn btn-primary" data-project-id="berandapos" aria-label="View details for BerandaPOS">View details</button>
+              <a href="https://pos.berandatoko.com/" target="_blank" rel="noreferrer">Visit site</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>SIMTARU Rembang</h3>
+            <p class="tagline">Government spatial-planning and geospatial public-information platform.</p>
+            <p class="meta">Laravel 13 · Next.js · PostGIS · Redis</p>
+            <div class="project-links">
+              <button type="button" class="btn btn-primary" data-project-id="simtaru-rembang" aria-label="View details for SIMTARU Rembang">View details</button>
+              <a href="https://simtaru.rembangkab.go.id/" target="_blank" rel="noreferrer">Visit site</a>
+            </div>
+          </article>
+        </div>
+        <div class="all-projects-row">
+          <a class="btn btn-secondary" href="./projects.html">All projects</a>
+        </div>
+        <h3 style="margin-top:1.2rem">Open source</h3>
         <div class="works-grid">
           <article class="work-card">
             <div class="work-head">
@@ -193,13 +201,24 @@
 
           <article class="work-card">
             <div class="work-head">
-              <h3>E-commerce Microservices Platform</h3>
-              <span>Professional</span>
+              <h3>hinata-blog-to-pdf</h3>
+              <span>Open Source</span>
             </div>
             <p>
-              Designed and optimized Go-based microservices for checkout, payment, authentication, and catalog integrations in high-volume e-commerce systems.
+              Utility project to save Hinatazaka member blog entries into PDF format for easier archiving and reading.
             </p>
-            <a href="#experience">See Experience Details</a>
+            <a href="https://github.com/ekiapek/hinata-blog-to-pdf" target="_blank" rel="noreferrer">View Repository</a>
+          </article>
+
+          <article class="work-card">
+            <div class="work-head">
+              <h3>hinata-image-blog-scraper</h3>
+              <span>Open Source</span>
+            </div>
+            <p>
+              Python-based scraper for downloading blog images at scale with practical automation workflows.
+            </p>
+            <a href="https://github.com/ekiapek/hinata-image-blog-scraper" target="_blank" rel="noreferrer">View Repository</a>
           </article>
 
           <article class="work-card">
@@ -230,6 +249,8 @@
       <p><span id="year"></span> Yeheskiel Reza Andrazein</p>
     </footer>
 
+    <script src="./projects-data.js"></script>
+    <script src="./project-modal.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

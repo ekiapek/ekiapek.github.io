@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Projects | Yeheskiel Reza Andrazein</title>
+    <meta
+      name="description"
+      content="Complete list of reviewed case studies by Yeheskiel Reza Andrazein: BerandaToko, BerandaPOS, Hashmato, SIMTARU Rembang, SIMTARU Blora, Namaa Ads, and GBI Sion Banjarbaru."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Sora:wght@500;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb bg-orb-a" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb-b" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a href="./index.html#home" class="brand">Yeheskiel Reza Andrazein</a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="./index.html#about">About</a>
+        <a href="./index.html#experience">Experience</a>
+        <a href="./index.html#works">Works</a>
+        <a href="./index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page-wrap">
+      <section class="hero reveal" style="--delay: 0.05s">
+        <p class="eyebrow">Case studies</p>
+        <h1>All projects</h1>
+        <p class="lead">
+          Seven reviewed case studies. Each entry states the product context separately from my
+          personal contribution. Select any project for details.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-secondary" href="./index.html#works">Back to home</a>
+        </div>
+      </section>
+
+      <section class="section reveal" style="--delay: 0.1s" aria-label="Complete project list">
+        <div class="section-head">
+          <p class="eyebrow">Seven case studies</p>
+          <h2>Complete project list</h2>
+        </div>
+        <div class="project-grid" id="all-projects"></div>
+        <noscript>
+          <ul>
+            <li><a href="https://berandatoko.com/">BerandaToko</a></li>
+            <li><a href="https://pos.berandatoko.com/">BerandaPOS</a></li>
+            <li><a href="https://hashmato.com/">Hashmato</a></li>
+            <li><a href="https://simtaru.rembangkab.go.id/">SIMTARU Rembang</a></li>
+            <li><a href="https://simtaru.blorakab.go.id/simtaru-blora">SIMTARU Blora</a></li>
+            <li>Namaa Ads (public URL TBA)</li>
+            <li><a href="https://gbi-sion.bitnbuilt.com/">GBI Sion Banjarbaru</a></li>
+          </ul>
+        </noscript>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><span id="year"></span> Yeheskiel Reza Andrazein</p>
+    </footer>
+
+    <script src="./projects-data.js"></script>
+    <script src="./project-modal.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var root = document.getElementById("all-projects");
+        (window.PROJECTS || []).forEach(function (p) {
+          var card = document.createElement("article");
+          card.className = "project-card";
+          var links = (p.urls || [])
+            .map(function (u) {
+              return '<a href="' + u.href + '" target="_blank" rel="noreferrer">' + u.label + "</a>";
+            })
+            .join(" ");
+          card.innerHTML =
+            "<h3>" + p.name + "</h3>" +
+            '<p class="tagline">' + p.tagline + "</p>" +
+            '<p class="meta">' + (p.period ? p.period + " · " : "") + p.stack.slice(0, 4).join(" · ") + "</p>" +
+            '<div class="project-links"><button type="button" class="btn btn-primary" data-project-id="' + p.id +
+            '" aria-label="View details for ' + p.name + '">View details</button> ' + links + "</div>";
+          root.appendChild(card);
+        });
+        window.ProjectModal.bind(document);
+      });
+    </script>
+  </body>
+</html>
