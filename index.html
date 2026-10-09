@@ -8,6 +8,7 @@
       name="description"
       content="Portfolio of Yeheskiel Reza Andrazein, a backend software developer focused on scalable e-commerce systems and reliable microservices."
     />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,9 +19,6 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="bg-orb bg-orb-a" aria-hidden="true"></div>
-    <div class="bg-orb bg-orb-b" aria-hidden="true"></div>
-
     <header class="site-header">
       <a href="#home" class="brand">Yeheskiel Reza Andrazein</a>
       <nav class="top-nav" aria-label="Main navigation">
@@ -33,8 +31,7 @@
     </header>
 
     <main id="home" class="page-wrap">
-      <section class="hero reveal" style="--delay: 0.05s">
-        <p class="eyebrow">Senior Backend Engineer</p>
+      <section class="hero">
         <h1>Senior Backend Engineer for e-commerce, payments, and public platforms.</h1>
         <p class="lead" id="about">
           Backend software engineer experienced in e-commerce platforms and backend services. Proficient in Go, Python,
@@ -52,9 +49,8 @@
         </ul>
       </section>
 
-      <section id="experience" class="section reveal" style="--delay: 0.15s">
+      <section id="experience" class="section">
         <div class="section-head">
-          <p class="eyebrow">Career Journey</p>
           <h2>Work Experience</h2>
         </div>
 
@@ -114,9 +110,8 @@
         </div>
       </section>
 
-      <section id="skills" class="section reveal" style="--delay: 0.2s">
+      <section id="skills" class="section">
         <div class="section-head">
-          <p class="eyebrow">Toolbox</p>
           <h2>Skills</h2>
         </div>
 
@@ -129,9 +124,8 @@
         </div>
       </section>
 
-      <section id="education" class="section reveal" style="--delay: 0.22s">
+      <section id="education" class="section">
         <div class="section-head">
-          <p class="eyebrow">Education</p>
           <h2>Academic Background</h2>
         </div>
 
@@ -148,14 +142,14 @@
         </article>
       </section>
 
-      <section id="works" class="section reveal" style="--delay: 0.25s">
+      <section id="works" class="section">
         <div class="section-head">
-          <p class="eyebrow">Selected Work</p>
           <h2>Projects and Product Contributions</h2>
         </div>
 
         <div class="project-grid" id="featured-projects">
           <article class="project-card">
+            <img src="./assets/projects/berandatoko-home-hero.png" alt="BerandaToko public homepage hero describing WhatsApp-based reselling without deposits or capital" width="1280" height="633" loading="lazy" />
             <h3>BerandaToko</h3>
             <p class="tagline">WhatsApp-first commerce and reseller/PPOB platform.</p>
             <p class="meta">Go · Fiber v2 · RabbitMQ</p>
@@ -165,6 +159,7 @@
             </div>
           </article>
           <article class="project-card">
+            <img src="./assets/projects/berandapos-public-onboarding.png" alt="BerandaPOS public onboarding screen for recording offline and online orders in one system" width="1280" height="633" loading="lazy" />
             <h3>BerandaPOS</h3>
             <p class="tagline">POS platform for Indonesian UMKM.</p>
             <p class="meta">Go · Fiber v3 · PostgreSQL · Redis · RabbitMQ</p>
@@ -174,6 +169,7 @@
             </div>
           </article>
           <article class="project-card">
+            <img src="./assets/projects/simtaru-rembang-public.png" alt="SIMTARU Rembang public homepage hero welcoming visitors to the spatial information portal" width="1280" height="633" loading="lazy" />
             <h3>SIMTARU Rembang</h3>
             <p class="tagline">Government spatial-planning and geospatial public-information platform.</p>
             <p class="meta">Laravel 13 · Next.js · PostGIS · Redis</p>
@@ -186,7 +182,7 @@
         <div class="all-projects-row">
           <a class="btn btn-secondary" href="./projects.html">All projects</a>
         </div>
-        <h3 style="margin-top:1.2rem">Open source</h3>
+        <h3 class="section-subtitle">Open source</h3>
         <div class="works-grid">
           <article class="work-card">
             <div class="work-head">
@@ -234,8 +230,7 @@
         </div>
       </section>
 
-      <section id="contact" class="section contact reveal" style="--delay: 0.3s">
-        <p class="eyebrow">Let us connect</p>
+      <section id="contact" class="section contact">
         <h2>Available for backend engineering collaboration and product-focused system design.</h2>
         <div class="cta-row">
           <a class="btn btn-primary" href="mailto:eki_yeheskiel@hotmail.co.id">Send Email</a>

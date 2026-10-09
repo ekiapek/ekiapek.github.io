@@ -30,7 +30,7 @@
     dlg.innerHTML =
       '<div class="modal-inner">' +
       '<div class="modal-head"><h2 id="project-modal-title"></h2>' +
-      '<button type="button" class="modal-close" data-close aria-label="Close project details">Close ✕</button></div>' +
+      '<button type="button" class="modal-close" data-close aria-label="Close project details">Close</button></div>' +
       '<div class="modal-body"></div></div>';
     document.body.appendChild(dlg);
     dlg.addEventListener("click", function (ev) {

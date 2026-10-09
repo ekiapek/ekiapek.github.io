@@ -31,7 +31,7 @@ window.PROJECTS = [
     tagline: "POS platform for Indonesian UMKM, now in production (user-reported).",
     urls: [{ label: "pos.berandatoko.com", href: "https://pos.berandatoko.com/" }],
     period: null,
-    role: "Senior Backend Engineer, Jatis Mobile — backend architecture and technical delivery (user-confirmed)",
+    role: "Senior Backend Engineer, Jatis Mobile: backend architecture and technical delivery (user-confirmed)",
     context:
       "Public onboarding describes recording offline and online orders in one place, daily profit/loss calculation, and financial reports for KUR applications. Onboarding text, not proof every workflow is live.",
     contribution: [

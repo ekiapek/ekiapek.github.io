@@ -1,0 +1,18 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html",
+          "projects.html"
+        ],
+        "createdAt": "2026-10-09T15:05:15.936Z",
+        "reason": "Codex: browser inspection confirms both hero sections are transparent and borderless, so zero horizontal padding is intentional; their content aligns with the page column."
+      }
+    ]
+  }
+}
