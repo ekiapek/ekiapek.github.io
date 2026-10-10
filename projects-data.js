@@ -14,7 +14,7 @@ window.PROJECTS = [
     period: null,
     role: "Senior Backend Engineer, Jatis Mobile",
     context:
-      "Public site describes a WhatsApp-based reseller/PPOB service: mobile data, PLN tokens, e-wallet top-ups, BPJS, PDAM, and an LPG ordering flow. Product copy, not a result claim.",
+      "Public site describes a WhatsApp-based reseller/PPOB service: mobile data, PLN tokens, e-wallet top-ups, BPJS, PDAM, and an LPG ordering flow.",
     contribution: [
       "Led re-platforming of the WhatsApp-first commerce system from a monolith toward approximately 30 Go/Fiber v2 services.",
       "Created reusable service boilerplate and shared libraries; mapped RabbitMQ-backed chatbot flows across commerce, payment, refund, voucher, and digital-product areas.",
@@ -28,16 +28,16 @@ window.PROJECTS = [
   {
     id: "berandapos",
     name: "BerandaPOS",
-    tagline: "POS platform for Indonesian UMKM, now in production.",
+    tagline: "POS platform for Indonesian UMKM.",
     urls: [{ label: "pos.berandatoko.com", href: "https://pos.berandatoko.com/" }],
     period: null,
-    role: "Senior Backend Engineer, Jatis Mobile: backend architecture and technical delivery (user-confirmed)",
+    role: "Senior Backend Engineer, Jatis Mobile: backend architecture and technical delivery",
     context:
-      "Public onboarding describes recording offline and online orders in one place, daily profit/loss calculation, and financial reports for KUR applications. Onboarding text, not proof every workflow is live.",
+      "Public onboarding describes recording offline and online orders in one place, daily profit/loss calculation, and financial reports for KUR applications.",
     contribution: [
       "Led backend architecture and technical delivery for the microservice-based POS platform.",
       "Defined service boundaries, RBAC, PostgreSQL/Redis/RabbitMQ foundations, and API contracts.",
-      "Authored functional specifications, technical requirements, API documentation, and implementation hand-offs (approximately 100 design/engineering documents per the CV).",
+      "Authored functional specifications, technical requirements, API documentation, and implementation hand-offs.",
       "Led development of the audit, reporting, transaction, and payment services, plus the external inventory integration.",
     ],
     stack: ["Go", "Fiber v3", "PostgreSQL", "Redis", "RabbitMQ", "Flutter", "Next.js"],
@@ -52,10 +52,11 @@ window.PROJECTS = [
     period: "December 2024–February 2025",
     role: "Backend Developer",
     context:
-      "Public site title describes software solutions for restaurants and retail. Page body was empty at latest check; no product detail inferred from the title.",
+      "Public site title describes software solutions for restaurants and retail.",
     contribution: [
       "Implemented DeliveryHero catalog-push and incoming-order webhook flows.",
       "Built accept/reject endpoints with menu-combo/order-tag, time-slot, image, and custom-price handling.",
+      "Implemented messaging integration to WhatsApp, Line, Telegram, E-mail, and SMS",
       "Added RabbitMQ messaging/worker integration, attachments, and email reconnection.",
     ],
     stack: ["Go", "RabbitMQ"],
@@ -90,11 +91,11 @@ window.PROJECTS = [
     period: "September–October 2026",
     role: "Engineering/development",
     context:
-      "Government spatial-planning portal. Public URL was blocked by a browser challenge during review; the live UI was not verified and was not bypassed.",
+      "Government spatial-planning portal.",
     contribution: [
       "Supported local Docker setup, compatibility route/asset aliases, smoke-test fixes, and map/upload settings.",
     ],
-    stack: ["PHP legacy application (framework/version not confirmed)"],
+    stack: ["PHP"],
     image: null,
     notes: ["Maintenance/porting scope, not ownership of the complete system."],
   },
@@ -106,7 +107,7 @@ window.PROJECTS = [
     period: "2026",
     role: "Product Research, System Architecture, and Engineering",
     context:
-      "Saudi-first digital advertising platform for campaign planning and management. Public URL TBA.",
+      "Saudi-first digital advertising platform for campaign planning and management.",
     contribution: [
       "Researched and architected the platform, then developed it from scratch with FastAPI and Next.js.",
       "Registered business accounts required for system/app integrations.",
@@ -121,11 +122,11 @@ window.PROJECTS = [
     name: "GBI Sion Banjarbaru",
     tagline: "Church-management system reported in use by the church.",
     urls: [{ label: "gbi-sion.bitnbuilt.com", href: "https://gbi-sion.bitnbuilt.com/" }],
-    period: "February 2026 (from repository commit dates; exact engagement range not supplied)",
+    period: "February 2026",
     role: "Engineering and architecture, whole system",
     context:
-      "Public page titled “Statistik Data Jemaat GBI Sion Banjarbaru”. It remained loading (“Memuat data...”) during review; no member records were exposed.",
-    contribution: ["Engineered and architected the whole church-management system (member/family records, organization and cell-group management, and related administration per local code and feature notes)."],
+      "",
+    contribution: ["Engineered and architected the whole church-management system (member/family records, organization and cell-group management, and related administration)."],
     stack: ["React", "TypeScript", "Supabase"],
     image: null,
     notes: [],
