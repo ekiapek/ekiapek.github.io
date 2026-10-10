@@ -12,7 +12,7 @@ window.PROJECTS = [
       { label: "site.berandatoko.com", href: "https://site.berandatoko.com/" },
     ],
     period: null,
-    role: "Senior Backend Engineer, Jatis Mobile (CV work mapped here, user-confirmed)",
+    role: "Senior Backend Engineer, Jatis Mobile",
     context:
       "Public site describes a WhatsApp-based reseller/PPOB service: mobile data, PLN tokens, e-wallet top-ups, BPJS, PDAM, and an LPG ordering flow. Product copy, not a result claim.",
     contribution: [
@@ -28,7 +28,7 @@ window.PROJECTS = [
   {
     id: "berandapos",
     name: "BerandaPOS",
-    tagline: "POS platform for Indonesian UMKM, now in production (user-reported).",
+    tagline: "POS platform for Indonesian UMKM, now in production.",
     urls: [{ label: "pos.berandatoko.com", href: "https://pos.berandatoko.com/" }],
     period: null,
     role: "Senior Backend Engineer, Jatis Mobile: backend architecture and technical delivery (user-confirmed)",
@@ -42,7 +42,7 @@ window.PROJECTS = [
     ],
     stack: ["Go", "Fiber v3", "PostgreSQL", "Redis", "RabbitMQ", "Flutter", "Next.js"],
     image: { src: "assets/projects/berandapos-public-onboarding.png", alt: "BerandaPOS public onboarding screen for recording offline and online orders in one system", width: 1280, height: 633 },
-    notes: ["Local docs describe a 13-service architecture; the exact live service inventory was not independently checked."],
+    notes: [],
   },
   {
     id: "hashmato",
@@ -60,7 +60,7 @@ window.PROJECTS = [
     ],
     stack: ["Go", "RabbitMQ"],
     image: { src: "assets/projects/hashmato-home-hero.png", alt: "Hashmato public homepage hero for restaurant and retail POS software", width: 1280, height: 633 },
-    notes: ["No partner go-live, order volume, or savings claimed. Capture is older; live page returned an empty body at latest check."],
+    notes: [],
   },
   {
     id: "simtaru-rembang",
@@ -80,7 +80,7 @@ window.PROJECTS = [
     ],
     stack: ["Laravel 13", "PHP", "Next.js", "React", "PostgreSQL", "PostGIS", "Redis"],
     image: { src: "assets/projects/simtaru-rembang-public.png", alt: "SIMTARU Rembang public homepage hero welcoming visitors to the spatial information portal", width: 1280, height: 633 },
-    notes: ["No usage, latency, or capacity metrics claimed. Homepage statistics observed at zero during capture are not used."],
+    notes: [],
   },
   {
     id: "simtaru-blora",
@@ -114,12 +114,12 @@ window.PROJECTS = [
     ],
     stack: ["FastAPI", "Next.js", "PostgreSQL"],
     image: null,
-    notes: ["Production provider activation remained gated; not a live provider launch. No public screenshot in this pass."],
+    notes: [],
   },
   {
     id: "gbi-sion-banjarbaru",
     name: "GBI Sion Banjarbaru",
-    tagline: "Church-management system reported in use by the church (user-confirmed).",
+    tagline: "Church-management system reported in use by the church.",
     urls: [{ label: "gbi-sion.bitnbuilt.com", href: "https://gbi-sion.bitnbuilt.com/" }],
     period: "February 2026 (from repository commit dates; exact engagement range not supplied)",
     role: "Engineering and architecture, whole system",
@@ -128,6 +128,6 @@ window.PROJECTS = [
     contribution: ["Engineered and architected the whole church-management system (member/family records, organization and cell-group management, and related administration per local code and feature notes)."],
     stack: ["React", "TypeScript", "Supabase"],
     image: null,
-    notes: ["In-use status is user-reported, not independently verified through public admin screens."],
+    notes: [],
   },
 ];
